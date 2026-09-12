@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Models — OpsAI</title>
+  <meta name="description" content="Source repositories for OpsAgent and Ops 1.0 Beta — fully open-source AI models from OpsAI.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo" aria-label="OpsAI Home">
+        <span class="logo-mark">Ops</span><span class="logo-ai">AI</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/model.html" class="nav-link active">Models</a>
+        <a href="https://github.com/opsai-agent/agent" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <a href="https://github.com/opsai-agent/agent/blob/main/Agent" class="btn btn-primary nav-cta" target="_blank" rel="noopener">
+        Download OpsAgent
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow reveal">Source</p>
+      <h1 class="page-title reveal">Models & Agent</h1>
+      <p class="page-sub reveal">
+        All OpsAI components are open source. Explore the repositories, run them locally, or integrate via API.
+      </p>
+    </section>
+
+    <section class="section models-section">
+      <div class="model-grid">
+        <article class="model-card reveal">
+          <div class="model-badge">Beta</div>
+          <h2>OpsAgent</h2>
+          <p class="model-desc">
+            The terminal agent that talks to every Ops model. Install once, then type <code>opsss</code> to start.
+            Supports local models and API backends. Browser control via BrowserUSE.
+          </p>
+          <ul class="model-meta">
+            <li>Terminal (PowerShell)</li>
+            <li>Local + API</li>
+            <li>Apache 2.0</li>
+          </ul>
+          <a href="https://github.com/opsai-agent/agent" class="btn btn-primary" target="_blank" rel="noopener">
+            View Repository
+          </a>
+        </article>
+
+        <article class="model-card reveal">
+          <div class="model-badge">Beta</div>
+          <h2>Ops 1.0</h2>
+          <p class="model-desc">
+            An open-source and free AI model created by OpsAI. Use it with OpsAgent in the terminal.
+            Currently handles computer data, browser control, and basic tasks — training continues to strengthen capabilities.
+          </p>
+          <ul class="model-meta">
+            <li>Open weights</li>
+            <li>Works with OpsAgent</li>
+            <li>Apache 2.0</li>
+          </ul>
+          <a href="https://github.com/opsai-agent/ops-1.0" class="btn btn-primary" target="_blank" rel="noopener">
+            View Repository
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="notice reveal">
+        <p>
+          <strong>About capability:</strong> Ops 1.0 is intentionally positioned as an early beta.
+          It is not yet a frontier model. We are accelerating training so it can do more —
+          please look forward to updates. You can always choose a local model or an API call.
+        </p>
+      </div>
+      <div class="notice reveal" style="margin-top: 1rem;">
+        <p>
+          <strong>License:</strong> Apache License 2.0.
+          <strong>Notice:</strong> Currently only terminal support is available; a web version may come later.
+          BrowserUSE uses agent360dk/browser-mcp. PowerShell is a trademark of Microsoft.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">Ops</span><span class="logo-ai">AI</span>
+        <p>Open-source AI models & agent.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="https://github.com/opsai-agent/agent" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/opsai-agent/agent" target="_blank" rel="noopener">License (Apache 2.0)</a>
+      </div>
+      <p class="footer-note">PowerShell is a trademark of Microsoft. OpsAI is independent and unaffiliated.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
