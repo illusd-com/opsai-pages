@@ -1,22 +1,11 @@
 # OpsAI Website
 
-Official marketing site for **OpsAI** — fully open-source AI models and the OpsAgent terminal agent.
+Official site for OpsAI — open-source AI models & OpsAgent.
 
-- **Home** (`/` or `/home`): Introduction, features, and how to use OpsAgent
-- **Models** (`/model`): Source repositories for OpsAgent Beta and Ops 1.0 Beta
+- Home: `/` or `/home`
+- Models: `/model`
+- Language: EN / 繁體中文 toggle (persists in localStorage)
 
-## Local preview
+Live: https://opsai-pages.vercel.app
 
-Open `index.html` in a browser, or serve the folder:
-
-```bash
-npx serve .
-```
-
-## Deploy
-
-This site is static HTML/CSS/JS. Deploy to Vercel or enable GitHub Pages on the `main` branch (root).
-
-## License
-
-Site content follows the same spirit as the project (Apache 2.0 for the models/agent).
+Source also at: https://github.com/opsai-agent/pages
