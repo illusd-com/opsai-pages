@@ -19,77 +19,58 @@
         <span class="logo-mark">Ops</span><span class="logo-ai">AI</span>
       </a>
       <nav class="nav-links">
-        <a href="/" class="nav-link">Home</a>
-        <a href="/model.html" class="nav-link active">Models</a>
-        <a href="https://github.com/opsai-agent/agent" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="/" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="/model.html" class="nav-link active" data-i18n="nav.models">Models</a>
+        <a href="https://github.com/opsai-agent/agent" class="nav-link" target="_blank" rel="noopener" data-i18n="nav.github">GitHub</a>
       </nav>
-      <a href="https://github.com/opsai-agent/agent/blob/main/Agent" class="btn btn-primary nav-cta" target="_blank" rel="noopener">
-        Download OpsAgent
-      </a>
+      <div class="nav-right">
+        <button type="button" id="lang-toggle" class="lang-btn" onclick="toggleOpsaiLang()" aria-label="Switch language">中文</button>
+        <a href="https://github.com/opsai-agent/agent/blob/main/Agent" class="btn btn-primary nav-cta" target="_blank" rel="noopener" data-i18n="nav.download">Download OpsAgent</a>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="page-hero">
-      <p class="eyebrow reveal">Source</p>
-      <h1 class="page-title reveal">Models & Agent</h1>
-      <p class="page-sub reveal">
-        All OpsAI components are open source. Explore the repositories, run them locally, or integrate via API.
-      </p>
+      <p class="eyebrow reveal" data-i18n="models.eyebrow">Source</p>
+      <h1 class="page-title reveal" data-i18n="models.title">Models & Agent</h1>
+      <p class="page-sub reveal" data-i18n="models.sub">All OpsAI components are open source. Explore the repositories, run them locally, or integrate via API.</p>
     </section>
 
     <section class="section models-section">
       <div class="model-grid">
         <article class="model-card reveal">
           <div class="model-badge">Beta</div>
-          <h2>OpsAgent</h2>
-          <p class="model-desc">
-            The terminal agent that talks to every Ops model. Install once, then type <code>opsss</code> to start.
-            Supports local models and API backends. Browser control via BrowserUSE.
-          </p>
+          <h2 data-i18n="model.agent.title">OpsAgent</h2>
+          <p class="model-desc" data-i18n="model.agent.desc">The terminal agent that talks to every Ops model. Install once, then type opsss to start. Supports local models and API backends. Browser control via BrowserUSE.</p>
           <ul class="model-meta">
-            <li>Terminal (PowerShell)</li>
-            <li>Local + API</li>
-            <li>Apache 2.0</li>
+            <li data-i18n="model.agent.meta1">Terminal (PowerShell)</li>
+            <li data-i18n="model.agent.meta2">Local + API</li>
+            <li data-i18n="model.agent.meta3">Apache 2.0</li>
           </ul>
-          <a href="https://github.com/opsai-agent/agent" class="btn btn-primary" target="_blank" rel="noopener">
-            View Repository
-          </a>
+          <a href="https://github.com/opsai-agent/agent" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="model.agent.btn">View Repository</a>
         </article>
 
         <article class="model-card reveal">
           <div class="model-badge">Beta</div>
-          <h2>Ops 1.0</h2>
-          <p class="model-desc">
-            An open-source and free AI model created by OpsAI. Use it with OpsAgent in the terminal.
-            Currently handles computer data, browser control, and basic tasks — training continues to strengthen capabilities.
-          </p>
+          <h2 data-i18n="model.ops.title">Ops 1.0</h2>
+          <p class="model-desc" data-i18n="model.ops.desc">An open-source and free AI model created by OpsAI. Use it with OpsAgent in the terminal. Currently handles computer data, browser control, and basic tasks — training continues to strengthen capabilities.</p>
           <ul class="model-meta">
-            <li>Open weights</li>
-            <li>Works with OpsAgent</li>
-            <li>Apache 2.0</li>
+            <li data-i18n="model.ops.meta1">Open weights</li>
+            <li data-i18n="model.ops.meta2">Works with OpsAgent</li>
+            <li data-i18n="model.ops.meta3">Apache 2.0</li>
           </ul>
-          <a href="https://github.com/opsai-agent/ops-1.0" class="btn btn-primary" target="_blank" rel="noopener">
-            View Repository
-          </a>
+          <a href="https://github.com/opsai-agent/ops-1.0" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="model.ops.btn">View Repository</a>
         </article>
       </div>
     </section>
 
     <section class="section">
       <div class="notice reveal">
-        <p>
-          <strong>About capability:</strong> Ops 1.0 is intentionally positioned as an early beta.
-          It is not yet a frontier model. We are accelerating training so it can do more —
-          please look forward to updates. You can always choose a local model or an API call.
-        </p>
+        <p data-i18n="models.capability">About capability: Ops 1.0 is intentionally positioned as an early beta. It is not yet a frontier model. We are accelerating training so it can do more — please look forward to updates. You can always choose a local model or an API call.</p>
       </div>
       <div class="notice reveal" style="margin-top: 1rem;">
-        <p>
-          <strong>License:</strong> Apache License 2.0.
-          <strong>Notice:</strong> Currently only terminal support is available; a web version may come later.
-          BrowserUSE uses agent360dk/browser-mcp. PowerShell is a trademark of Microsoft.
-        </p>
+        <p data-i18n="models.license">License: Apache License 2.0. Notice: Currently only terminal support is available; a web version may come later. BrowserUSE uses agent360dk/browser-mcp. PowerShell is a trademark of Microsoft.</p>
       </div>
     </section>
   </main>
@@ -98,14 +79,14 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <span class="logo-mark">Ops</span><span class="logo-ai">AI</span>
-        <p>Open-source AI models & agent.</p>
+        <p data-i18n="footer.tagline">Open-source AI models & agent.</p>
       </div>
       <div class="footer-links">
-        <a href="/">Home</a>
-        <a href="https://github.com/opsai-agent/agent" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://github.com/opsai-agent/agent" target="_blank" rel="noopener">License (Apache 2.0)</a>
+        <a href="/" data-i18n="nav.home">Home</a>
+        <a href="https://github.com/opsai-agent/agent" target="_blank" rel="noopener" data-i18n="footer.github">GitHub</a>
+        <a href="https://github.com/opsai-agent/agent" target="_blank" rel="noopener" data-i18n="footer.license">License (Apache 2.0)</a>
       </div>
-      <p class="footer-note">PowerShell is a trademark of Microsoft. OpsAI is independent and unaffiliated.</p>
+      <p class="footer-note" data-i18n="footer.note">PowerShell is a trademark of Microsoft. OpsAI is independent and unaffiliated.</p>
     </div>
   </footer>
 

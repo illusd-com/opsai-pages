@@ -19,36 +19,33 @@
         <span class="logo-mark">Ops</span><span class="logo-ai">AI</span>
       </a>
       <nav class="nav-links">
-        <a href="/" class="nav-link active">Home</a>
-        <a href="/model.html" class="nav-link">Models</a>
-        <a href="https://github.com/opsai-agent/agent" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="/" class="nav-link active" data-i18n="nav.home">Home</a>
+        <a href="/model.html" class="nav-link" data-i18n="nav.models">Models</a>
+        <a href="https://github.com/opsai-agent/agent" class="nav-link" target="_blank" rel="noopener" data-i18n="nav.github">GitHub</a>
       </nav>
-      <a href="https://github.com/opsai-agent/agent/blob/main/Agent" class="btn btn-primary nav-cta" target="_blank" rel="noopener">
-        Download OpsAgent
-      </a>
+      <div class="nav-right">
+        <button type="button" id="lang-toggle" class="lang-btn" onclick="toggleOpsaiLang()" aria-label="Switch language">中文</button>
+        <a href="https://github.com/opsai-agent/agent/blob/main/Agent" class="btn btn-primary nav-cta" target="_blank" rel="noopener" data-i18n="nav.download">
+          Download OpsAgent
+        </a>
+      </div>
     </div>
   </header>
 
   <main>
-    <!-- Hero -->
     <section class="hero">
       <div class="hero-content">
-        <p class="eyebrow reveal">Fully Open Source</p>
+        <p class="eyebrow reveal" data-i18n="hero.eyebrow">Fully Open Source</p>
         <h1 class="hero-title reveal">
-          AI that runs<br>
-          <span class="gradient-text">where you choose</span>
+          <span data-i18n="hero.title.1">AI that runs</span><br>
+          <span class="gradient-text" data-i18n="hero.title.2">where you choose</span>
         </h1>
-        <p class="hero-sub reveal">
-          OpsAI delivers open-source AI models you can run locally or via API.
-          Pair them with OpsAgent in your terminal for practical computer control and everyday tasks.
+        <p class="hero-sub reveal" data-i18n="hero.sub">
+          OpsAI delivers open-source AI models you can run locally or via API. Pair them with OpsAgent in your terminal for practical computer control and everyday tasks.
         </p>
         <div class="hero-actions reveal">
-          <a href="https://github.com/opsai-agent/agent/blob/main/Agent" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
-            Download OpsAgent
-          </a>
-          <a href="/model.html" class="btn btn-secondary btn-lg">
-            Explore Models
-          </a>
+          <a href="https://github.com/opsai-agent/agent/blob/main/Agent" class="btn btn-primary btn-lg" target="_blank" rel="noopener" data-i18n="hero.cta.download">Download OpsAgent</a>
+          <a href="/model.html" class="btn btn-secondary btn-lg" data-i18n="hero.cta.explore">Explore Models</a>
         </div>
       </div>
       <div class="hero-visual reveal" aria-hidden="true">
@@ -69,103 +66,88 @@
       </div>
     </section>
 
-    <!-- Features -->
     <section class="section features" id="features">
       <div class="section-header">
-        <h2 class="section-title reveal">Built for control and openness</h2>
-        <p class="section-sub reveal">No lock-in. Run models your way — on your machine or through an API.</p>
+        <h2 class="section-title reveal" data-i18n="features.title">Built for control and openness</h2>
+        <p class="section-sub reveal" data-i18n="features.sub">No lock-in. Run models your way — on your machine or through an API.</p>
       </div>
       <div class="feature-grid">
         <article class="feature-card reveal">
           <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-            </svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           </div>
-          <h3>Fully Open Source</h3>
-          <p>Every component is open. Inspect, fork, and contribute under Apache License 2.0.</p>
+          <h3 data-i18n="feat1.title">Fully Open Source</h3>
+          <p data-i18n="feat1.desc">Every component is open. Inspect, fork, and contribute under Apache License 2.0.</p>
         </article>
         <article class="feature-card reveal">
           <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="2" y="3" width="20" height="14" rx="2"/>
-              <path d="M8 21h8M12 17v4"/>
-            </svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
           </div>
-          <h3>Local or API</h3>
-          <p>Download a local model for privacy and offline use, or call an API when you need more power.</p>
+          <h3 data-i18n="feat2.title">Local or API</h3>
+          <p data-i18n="feat2.desc">Download a local model for privacy and offline use, or call an API when you need more power.</p>
         </article>
         <article class="feature-card reveal">
           <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M4 17l6-6-6-6M12 19h8"/>
-            </svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 17l6-6-6-6M12 19h8"/></svg>
           </div>
-          <h3>Terminal-First Agent</h3>
-          <p>OpsAgent works inside PowerShell today. Type <code>opsss</code> and start chatting with any Ops model.</p>
+          <h3 data-i18n="feat3.title">Terminal-First Agent</h3>
+          <p data-i18n="feat3.desc">OpsAgent works inside PowerShell today. Type opsss and start chatting with any Ops model.</p>
         </article>
         <article class="feature-card reveal">
           <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="M12 6v6l4 2"/>
-            </svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           </div>
-          <h3>Practical Capabilities</h3>
-          <p>Handle computer data, control your browser via BrowserUSE, and complete everyday tasks — with continuous improvements underway.</p>
+          <h3 data-i18n="feat4.title">Practical Capabilities</h3>
+          <p data-i18n="feat4.desc">Handle computer data, control your browser via BrowserUSE, and complete everyday tasks — with continuous improvements underway.</p>
         </article>
       </div>
     </section>
 
-    <!-- How to use -->
     <section class="section how" id="how">
       <div class="section-header">
-        <h2 class="section-title reveal">How to get started</h2>
-        <p class="section-sub reveal">One agent works with every Ops model. Install once, then chat.</p>
+        <h2 class="section-title reveal" data-i18n="how.title">How to get started</h2>
+        <p class="section-sub reveal" data-i18n="how.sub">One agent works with every Ops model. Install once, then chat.</p>
       </div>
       <ol class="steps">
         <li class="step reveal">
           <span class="step-num">1</span>
           <div class="step-body">
-            <h3>Download OpsAgent</h3>
-            <p>Visit the <a href="https://github.com/opsai-agent/agent" target="_blank" rel="noopener">opsai-agent/agent</a> repository and grab the required terminal files from the Agent directory.</p>
+            <h3 data-i18n="step1.title">Download OpsAgent</h3>
+            <p data-i18n="step1.desc">Visit the opsai-agent/agent repository and grab the required terminal files from the Agent directory.</p>
           </div>
         </li>
         <li class="step reveal">
           <span class="step-num">2</span>
           <div class="step-body">
-            <h3>Run the installer</h3>
-            <p>Locate the downloaded files and open <code>install.exe</code> to configure. When it finishes you will see “Install successful.”</p>
+            <h3 data-i18n="step2.title">Run the installer</h3>
+            <p data-i18n="step2.desc">Locate the downloaded files and open install.exe to configure. When it finishes you will see “Install successful.”</p>
           </div>
         </li>
         <li class="step reveal">
           <span class="step-num">3</span>
           <div class="step-body">
-            <h3>Open a fresh terminal</h3>
-            <p>Close the current terminal completely and open a new one (a new tab is not enough).</p>
+            <h3 data-i18n="step3.title">Open a fresh terminal</h3>
+            <p data-i18n="step3.desc">Close the current terminal completely and open a new one (a new tab is not enough).</p>
           </div>
         </li>
         <li class="step reveal">
           <span class="step-num">4</span>
           <div class="step-body">
-            <h3>Start chatting</h3>
-            <p>Type <code>opsss</code> and begin talking with Ops 1.0 or any other Ops model. Choose local weights or an API key as preferred.</p>
+            <h3 data-i18n="step4.title">Start chatting</h3>
+            <p data-i18n="step4.desc">Type opsss and begin talking with Ops 1.0 or any other Ops model. Choose local weights or an API key as preferred.</p>
           </div>
         </li>
       </ol>
       <div class="notice reveal">
-        <p><strong>Note:</strong> Currently only terminal support is available. A web-based computer-control agent may arrive later. Browser control uses agent360dk/browser-mcp. Models can still be unstable — local or API is your choice.</p>
+        <p data-i18n="how.note">Note: Currently only terminal support is available. A web-based computer-control agent may arrive later. Browser control uses agent360dk/browser-mcp. Models can still be unstable — local or API is your choice.</p>
       </div>
     </section>
 
-    <!-- CTA -->
     <section class="section cta-section">
       <div class="cta-card reveal">
-        <h2>Ready to try OpsAI?</h2>
-        <p>Download the agent, pick a model, and start in your terminal in minutes.</p>
-        <a href="https://github.com/opsai-agent/agent/blob/main/Agent" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
-          Download OpsAgent
-        </a>
+        <h2 data-i18n="cta.title">Ready to try OpsAI?</h2>
+        <p data-i18n="cta.sub">Download the agent, pick a model, and start in your terminal in minutes.</p>
+        <a href="https://github.com/opsai-agent/agent/blob/main/Agent" class="btn btn-primary btn-lg" target="_blank" rel="noopener" data-i18n="cta.btn">Download OpsAgent</a>
       </div>
     </section>
   </main>
@@ -174,14 +156,14 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <span class="logo-mark">Ops</span><span class="logo-ai">AI</span>
-        <p>Open-source AI models & agent.</p>
+        <p data-i18n="footer.tagline">Open-source AI models & agent.</p>
       </div>
       <div class="footer-links">
-        <a href="/model.html">Models</a>
-        <a href="https://github.com/opsai-agent/agent" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://github.com/opsai-agent/agent" target="_blank" rel="noopener">License (Apache 2.0)</a>
+        <a href="/model.html" data-i18n="footer.models">Models</a>
+        <a href="https://github.com/opsai-agent/agent" target="_blank" rel="noopener" data-i18n="footer.github">GitHub</a>
+        <a href="https://github.com/opsai-agent/agent" target="_blank" rel="noopener" data-i18n="footer.license">License (Apache 2.0)</a>
       </div>
-      <p class="footer-note">PowerShell is a trademark of Microsoft. OpsAI is independent and unaffiliated.</p>
+      <p class="footer-note" data-i18n="footer.note">PowerShell is a trademark of Microsoft. OpsAI is independent and unaffiliated.</p>
     </div>
   </footer>
 
